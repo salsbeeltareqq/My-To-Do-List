@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>my to do list </title>
+</head>
+<body>
+    <div id="header">my to do list</div>
+    
+
+    <form id="frm1" action=>
+        <label for="task">task</label><br>
+        <input type="text" id="task" name="task" value=" "><br>
+        <label for="date">date</label><br>
+        <input type="date" id="date" name="date" value="08/14/2020"><br>
+        <label for="urqency">urqency</label><br>
+        <select id="urqency">
+            <option value="high">high</option>
+            <option value="medium">medium</option>
+            <option value="low">low</option>
+            
+          </select><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    
+      <div id="myDIV" class="header">
+        <span onclick="newElement()" class="addBtn">task</span>
+        <span onclick="newElement()" class="addBtn">date</span>
+        <span onclick="newElement()" class="addBtn">urqency</span>
+        <span onclick="newElement()" class="addBtn">done</span>
+      
+      
+      <ul id="myUL">
+        <li>task</li>
+        <li class="checked">date</li>
+        <li>urqency</li>
+        <li>done</li>
+        
+      </ul>
+      
+     </div>
+
+
+
+    <script  src="app.js"></script>
+</body>
+</html>
